@@ -5,7 +5,7 @@
 # SPDX-License-Identifier:	GPL-2.0+
 #
 
-PLATFORM_CPPFLAGS += -mstring -msoft-float
+PLATFORM_CPPFLAGS += -msoft-float -Wno-attributes
 
 ifneq (,$(CONFIG_440))
 PLATFORM_CPPFLAGS += -Wa,-m440 -mcpu=440
